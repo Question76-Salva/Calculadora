@@ -2,85 +2,54 @@
 <html>
 
 <head lang="en">
-    <meta charset="UTF-8">
-    <title>CALCULADORA</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="app.js"></script>
+  <meta charset="UTF-8" />
+  <title>Calculadora HTML5 CSS3 JQuery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="app.js"></script>
 </head>
 
 <body>
-    <table id="calculadora">
-        <tr>
-            <td colspan="4">
-                <input type="text" id="valor_numero" maxlength="20" class="cajita_valor" readonly="true">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <input type="Button" id="potencia" value="exp" class="boton_largo funcion">
-            </td>
-            <td>
-                <input type="Button" id="Dividir" value="/" class="boton funcion" onclick="pulsarOperador('/')">
-            </td>
-            <td>
-                <input type="Button" id="Multiplicar" value="x" class="boton funcion" onclick="pulsarOperador('*')">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="Button" id="7" value="7" class="boton" onclick="pulsarNumero('7')">
-            </td>
-            <td>
-                <input type="Button" id="8" value="8" class="boton" onclick="pulsarNumero('8')">
-            </td>
-            <td>
-                <input type="Button" id="9" value="9" class="boton" onclick="pulsarNumero('9')">
-            </td>
-            <td>
-                <input type="Button" id="Restar" value="-" class="boton funcion" onclick="pulsarOperador('-')">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="Button" id="4" value="4" class="boton" onclick="pulsarNumero('4')">
-            </td>
-            <td>
-                <input type="Button" id="5" value="5" class="boton" onclick="pulsarNumero('5')">
-            </td>
-            <td>
-                <input type="Button" id="6" value="6" class="boton" onclick="pulsarNumero('6')">
-            </td>
-            <td>
-                <input type="Button" id="Sumar" value="+" class="boton funcion" onclick="pulsarOperador('+')">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="Button" id="1" value="1" class="boton" onclick="pulsarNumero('1')">
-            </td>
-            <td>
-                <input type="Button" id="2" value="2" class="boton" onclick="pulsarNumero('2')">
-            </td>
-            <td>
-                <input type="Button" id="3" value="3" class="boton" onclick="pulsarNumero('3')">
-            </td>
-            <td>
-                <input type="Button" id="igual" value="=" class="boton funcion">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <input type="Button" id="0" value="0" class="boton_largo" onclick="pulsarNumero('0')">
-            </td>
-            <td>
-                <input type="Button" id="," value="," class="boton">
-            </td>
-            <td>
-                <input type="Button" id="C" value="C" class="boton funcion">
-            </td>
-        </tr>
-    </table>
+  <header>
+    <h1>Calculadora</h1>
+    <ul>
+      <li><img class="item" src="img/html5.png"></li>
+      <li><img class="item" src="img/ccs3.png"></li>
+      <li><img class="item" src="img/js.png"></li>
+    </ul>
+  </header>
+
+
+  <main>
+    <div id="calculadora">
+      <input type="text" id="valor_numero" maxlength="20" class="cajita_valor" readonly="true" />
+
+      <input type="Button" id="7" value="7" class="boton" onclick="pulsarNumero('7')" />
+      <input type="Button" id="8" value="8" class="boton" onclick="pulsarNumero('8')" />
+      <input type="Button" id="9" value="9" class="boton" onclick="pulsarNumero('9')" />
+      <input type="Button" id="Dividir" value="/" class="boton funcion" onclick="pulsarOperador('/')" />
+
+      <input type="Button" id="4" value="4" class="boton" onclick="pulsarNumero('4')" />
+      <input type="Button" id="5" value="5" class="boton" onclick="pulsarNumero('5')" />
+      <input type="Button" id="6" value="6" class="boton" onclick="pulsarNumero('6')" />
+      <input type="Button" id="Multiplicar" value="x" class="boton funcion" onclick="pulsarOperador('*')" />
+
+      <input type="Button" id="1" value="1" class="boton" onclick="pulsarNumero('1')" />
+      <input type="Button" id="2" value="2" class="boton" onclick="pulsarNumero('2')" />
+      <input type="Button" id="3" value="3" class="boton" onclick="pulsarNumero('3')" />
+      <input type="Button" id="Restar" value="-" class="boton funcion" onclick="pulsarOperador('-')" />
+
+      <input type="Button" id="igual" value="=" class="boton funcion" />
+      <input type="Button" id="C" value="C" class="boton funcion" />
+      <input type="Button" id="0" value="0" class="boton" onclick="pulsarNumero('0')" />
+      <input type="Button" id="Sumar" value="+" class="boton funcion" onclick="pulsarOperador('+')" />
+    </div>
+  </main>
+
+  <footer>
+    <p>Salvador Belloso Santos</p>
+  </footer>
 </body>
 
 </html>

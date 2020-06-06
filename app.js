@@ -28,7 +28,7 @@ $(document).ready(function () {
         paint();
     });
 
-    /* TAREA: Completar las funciones como la "coma" y el "exponencial" y terminar los eventos del teclado. */
+    /* TAREA: Completar las funciones como la "coma" y el "exponencial" */
 
     $(document).keyup(function (event) {
         console.log(event.keyCode);
@@ -44,7 +44,26 @@ $(document).ready(function () {
         if (event.keyCode == 8) {
             $('#C').click();
         }
-        /* Terminar los eventos con el teclado para los operadores */
+        if (event.keyCode == 110) {
+            $('#,').click(); // coma
+        }
+        if (event.keyCode == 69) {
+            // 69 (letra e)
+            $('#potencia').click(); // exp
+        }
+        /* Terminar los eventos con el teclado para los operadores "+ - * /" */
+        if (event.keyCode == 107) {
+            $('#Sumar').click(); // +
+        }
+        if (event.keyCode == 109) {
+            $('#Restar').click(); // -
+        }
+        if (event.keyCode == 106) {
+            $('#Multiplicar').click(); // *
+        }
+        if (event.keyCode == 111) {
+            $('#Dividir').click(); // /
+        }
 
     })
 });
@@ -71,3 +90,13 @@ function pulsarOperador(op) {
     paint();
 
 }
+
+/* === efecto desaparecer al hacer click en la calculadora === */
+
+/*
+$(document).ready(function () {
+    $('div').click(function () {
+        $('div').toggle('slow');
+    });
+});
+*/
